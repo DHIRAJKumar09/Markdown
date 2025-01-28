@@ -1,0 +1,93 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.header {
+  background-color: #003366;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  gap: 20px;
+}
+
+
+.editor-pane,
+.preview-pane {
+  flex: 1;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-pane h2,
+.preview-pane h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+  color: #003366;
+}
+
+.textarea {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+}
+
+
+.preview-content {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  background: #f9f9f9;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #4fa3ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
